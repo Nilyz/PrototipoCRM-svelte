@@ -1,13 +1,8 @@
 <script>
     import Button from "../lib/Button.svelte";
- //Enrutador
-
-    function handleLoginClick() {
-        // Lógica para redirigir al login
-        console.log("Botón de login presionado");
-        window.location.href = '/Login';
-    }
 </script>
+
+
 
 <main>
     <div class="logoCont">
@@ -24,7 +19,7 @@
     <p>Brew & Co.</p>
     </div>
     
-    <Button onClick={handleLoginClick} btnText="Iniciar Sesión" btnWidth="50%" btnHeight="60px" />
+    <Button btnText="Iniciar Sesión" btnWidth="50%" btnHeight="60px" path="/login" btnBackgroundColor="var(--color-cream)"/>
 </main>
 
 <style>
